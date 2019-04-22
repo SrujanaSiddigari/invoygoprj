@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    
+        <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    
+        <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+        <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+    
+        <link href="css/animate.css" rel="stylesheet">
+        <!-- <link href="css/animate.css" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        <nav id="mainheader"> 
+            <div class="nav-wrapper">
+              <div>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons micon">menu</i></a>
+                </div>
+                <a href="#" class="brand-logo"><img id="logo" src="images/logotest.png"></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+
+                  <li><a href="#" class="tooltipped" id="helpicn" data-position="bottom" data-tooltip="Help"><i class="material-icons">help</i></a></li>
+                  <li><a href="#" class="tooltipped" id="bellicn" data-position="bottom" data-tooltip="Notifications"><i class="material-icons">notifications_none</i></a></li>
+
+                  <li><a href="#" class="tooltipped" id="exiticn" data-position="bottom" data-tooltip="Logout"><i class="material-icons">exit_to_app</i></a></li>
+                    <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+                    
+                </ul>
+            </div>
+          </nav>
+          <!-- <nav>
+              <div class="nav-wrapper">
+                <div class="col s12" id="breadcrumbnav">
+                  <a href="#!" class="breadcrumb">First</a>
+                  <a href="#!" class="breadcrumb">Second</a>
+                  <a href="#!" class="breadcrumb">Third</a>
+                </div>
+              </div>
+            </nav> -->
+         
+      <!--side nav-->
+      
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/logobg.jpg">
+          </div>
+          <!-- <a href="#" class="brand-logo"><img src="images/logobg.jpg"></a> -->
+
+          <a href="#user"><img class="circle" src="images/sidenavprofimg.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="dashboardpg.html"><i class="material-icons" id="icn">dashboard</i>Dashboard</a></li>
+       <li><a href="#!"><i class="material-icons" id="icn">contacts</i>Contacts</a></li>
+       <li><a href="#!"><i class="material-icons" id="icn">description</i>Invoices</a></li>
+       <li><a href="#!"><i class="material-icons" id="icn">business_center</i>Payments</a></li>
+
+
+      <!--Tools-->
+             <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion" id="arrow1">
+                      <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">build</i>Tools<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="calendar.html" class="subitem">Calendar</a></li>
+                            <li><a href="#" class="subitem">Tasks</a></li>
+                            <li><a href="#" class="subitem">Email</a></li>
+                            <li><a href="#" class="subitem">Documents</a></li>
+                          </ul>
+                      </div>   
+                  </ul>  
+          </li>
+       <!--Tools-->
+
+       <!--Reports-->
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion" id="arrow2">
+          <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">assignment</i>Reports<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="calendar.html" class="subitem">Invoice Details</a></li>
+                <li><a href="#" class="subitem">Payment Details</a></li>
+                <li><a href="#" class="subitem">Customer Balance</a></li>
+                <li><a href="#" class="subitem">Past Due</a></li>
+              </ul>
+          </div>   
+      </ul>  
+</li>
+
+       <!--Reports-->
+
+        <!--support-->
+             <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion" id="arrow3">
+                      <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">call</i>Support<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#" class="subitem">Contact us</a></li>
+                            <li><a href="#" class="subitem">Help</a></li>
+                          </ul>
+                      </div>   
+                  </ul>  
+          </li>
+        <!--support-->
+
+        <!--My Account-->
+         <li class="no-padding">
+                <ul class="collapsible collapsible-accordion" id="arrow4">
+                  <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">account_circle</i>MyAccount<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#" class="subitem">Company Info</a></li>
+                        <li><a href="#" class="subitem">Perfernces</a></li>
+                        <li><a href="#" class="subitem">Users</a></li>
+                        <li><a href="#" class="subitem">Billing</a></li>
+                        <li><a href="#" class="subitem">Legal</a></li>
+                      </ul>
+                  </div>   
+              </ul>  
+      </li>
+     <!--My Account-->
+
+    
+
+   <!--end-->
+     </ul> 
+      <!--side nav-->
+     
+      <!--middle content starts here-->
+        
+      <div class="container">
+
+          <div class="row">
+              <form class="col m12">
+                <div class="row">
+                  <div class="input-field col m6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="input-field col m6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Lastname</label>
+                  </div>
+                 
+                </div>
+                <div class="row">
+                  <div class="input-field col m6">
+                    <input id="comapny" type="text" class="validate">
+                    <label for="company">Company</label>
+                  </div>
+                 
+                </div>
+                <div class="row">
+                  <div class="input-field col m6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                    <div class="input-field col m6">
+                      <input id="phone" type="text" class="validate">
+                      <label for="phone">Phone</label>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                      <div class="input-field col m6">
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Cell</label>
+                      </div>
+                      
+                    </div>
+          
+              </form>
+             
+            </div>
+                  
+      <!--end of container-->
+      </div>
+
+                    
+                    
+          
+   
+                     
+          
+             
+      
+
+
+    
+
+              
+         
+                
+
+         
+
+      <!--middle content ends here-->
+        <!--scripts-->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/plugins/fullcalendar/moment.min.js"></script>
+        <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+        
+<!-- Mainly scripts -->
+<script src="js/plugins/fullcalendar/moment.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<!-- Custom and plugin javascript -->
+<!-- <script src="js/inspinia.js"></script> -->
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- jQuery UI custom -->
+<script src="js/jquery-ui.custom.min.js"></script>
+
+<!-- iCheck -->
+<script src="js/plugins/iCheck/icheck.min.js"></script>
+
+<!-- Full Calendar -->
+<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<!-- <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script> -->
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+        <script>
+         document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, {"edge":"left"});
+        });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+       $('.collapsible').collapsible();
+       $('.tabs').tabs();
+       
+        
+        var ctx = document.getElementById('myChart');
+   
+        var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+            label: 'Invoices',
+            data: [12, 19, 30, 50, 60, 70],
+            backgroundColor: [
+                'rgb(82, 143, 228)',
+                'rgb(112, 183, 121)',
+                'rgb(252, 135, 62)',
+                'rgb(225, 74, 91)',
+                'rgb(148, 31, 178)',
+                'rgb(98, 110, 83)'
+            ],
+            borderColor: [
+                'rgb(82, 143, 228)',
+                'rgb(112, 183, 121)',
+                'rgb(252, 135, 62)',
+                'rgb(225, 74, 91)',
+                'rgb(148, 31, 178)',
+                'rgb(98, 110, 83)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+// Donut chart
+
+ var cttx = document.getElementById('myDoughnutChart');
+ var myDoughnutChart = new Chart(cttx, {
+    type: 'doughnut',
+    data: {
+       
+    datasets: [{
+        data: [10, 20, 30],
+       
+    backgroundColor: [
+               'rgb(53, 71, 94)',
+                'rgb(57,195,156)',
+                'rgb(211, 42, 97)'
+            ],
+    borderColor: [
+              'rgb(53, 71, 94)',
+                'rgb(57,195,156)',
+                'rgb(211, 42, 97)'
+            ]
+    }],
+    labels: [
+        'Blue',
+        'Green',
+        'Pink'
+      
+    ]
+},
+
+    options: {
+        "animation.animateRotate": "true"
+    },
+  
+});
+
+var dataFirst = {
+    label: "Expected",
+    data: [28, 48, 40, 19, 86, 27, 90],
+    lineTension: 0.3,
+    fill: true,
+   
+    borderColor: 'rgba(135, 206, 192, 1)' ,
+    backgroundColor:   'rgba(135, 206, 192, 1)',
+    // pointBorderColor: 'rgba(255, 99, 132, 1)',
+    // pointBackgroundColor: 'lightgreen',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2,
+    pointStyle: 'rect'
+  };
+
+var dataSecond = {
+    label: "Actual",
+    data: [65, 59, 80, 81, 56, 55, 40],
+    lineTension: 0.3,
+    fill: true,
+    borderColor: 'rgb(237,237,237, 1)',
+    backgroundColor: 'rgb(237,237,237, 1)',
+    
+    // pointBorderColor:  'rgba(54, 162, 235, 1)',
+    // pointBackgroundColor: 'lightgreen',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2
+  };
+
+var speedData = {
+  labels: ["January", "February", "March", "April", "May", "June"],
+  datasets: [dataFirst, dataSecond]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+//line chart initialization
+var ctxc = document.getElementById('myLineChart');
+var myLineChart = new Chart(ctxc, {
+    type: 'line',
+    data: speedData,
+    options:chartOptions
+});
+
+//Second Bar chart
+var cctx = document.getElementById('myBarChart');
+   
+   var myChart = new Chart(cctx, {
+type: 'bar',
+data: {
+   labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+   datasets: [{
+       label: 'Monthly Recurring Revenue',
+       data: [12, 19, 50, 30, 60, 5],
+       backgroundColor: [
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)'
+                
+       ],
+       borderColor: [
+              'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)',
+                'rgba(211, 42, 46, 1)'
+       ],
+       borderWidth: 1
+   }]
+},
+options: {
+   scales: {
+       yAxes: [{
+           ticks: {
+               beginAtZero: true
+           }
+       }]
+   }
+}
+});
+
+
+
+//tooltips intialisation
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+
+
+//pie chart initialization
+var ctxx=document.getElementById("myPieChart")
+var myPieChart = new Chart(ctxx, {
+    type: 'pie',
+
+    data: {
+        labels: [
+        'Contacted',
+        'Working',
+        'New',
+        'Pending'
+    ],
+    datasets: [{
+        data: [10, 20, 30, 50],
+        
+    backgroundColor: [
+                'rgb(223, 82, 104)',
+                'rgb(9, 195, 182)',
+                'rgb(40, 137, 232)',
+                'rgba(254, 187, 33)'
+               
+            ],
+    borderColor: [
+                'rgb(223, 82, 104)',
+                'rgb(9, 195, 182)',
+                'rgb(40, 137, 232)',
+                'rgba(254, 187, 33)'
+               
+            ]
+    }],
+},
+
+    options: {
+        "animation.animateRotate": "true"
+    }
+
+});
+
+ 
+//   $(".collapsible").click(function () {
+    $(".collapsible").click(function () {
+      var curlink = $(this).find(".rotate");
+     
+    $(curlink).toggleClass("down");
+});        
+
+});
+
+</script>
+        <!--scripts-->
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

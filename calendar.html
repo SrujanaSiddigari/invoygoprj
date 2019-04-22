@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    
+        <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    
+        <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+        <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+    
+        <link href="css/animate.css" rel="stylesheet">
+        <!-- <link href="css/animate.css" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img id="logo" src="images/logotest.png"></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+
+                  <li><a href="#" class="tooltipped" id="helpicn" data-position="bottom" data-tooltip="Help"><i class="material-icons">help</i></a></li>
+                  <li><a href="#" class="tooltipped" id="bellicn" data-position="bottom" data-tooltip="Notifications"><i class="material-icons">notifications_none</i></a></li>
+
+                  <li><a href="#" class="tooltipped" id="exiticn" data-position="bottom" data-tooltip="Logout"><i class="material-icons">exit_to_app</i></a></li>
+                    <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+                    <!--Quick Links-->
+                  
+                    <!--Quick Links-->
+                </ul>
+            </div>
+          </nav>
+          <div>
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons micon">menu</i></a>
+              </div>
+
+      <!--side nav-->
+      
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/logobg.jpg">
+          </div>
+          <!-- <a href="#" class="brand-logo"><img src="images/logobg.jpg"></a> -->
+
+          <a href="#user"><img class="circle" src="images/sidenavprofimg.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="dashboardpg.html"><i class="material-icons" id="icn">dashboard</i>Dashboard</a></li>
+       <li><a href="#!"><i class="material-icons" id="icn">contacts</i>Contacts</a></li>
+       <li><a href="#!"><i class="material-icons" id="icn">description</i>Invoices</a></li>
+       <li><a href="#!"><i class="material-icons" id="icn">business_center</i>Payments</a></li>
+
+
+      <!--Tools-->
+             <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">build</i>Tools<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="calendar.html" class="subitem">Calendar</a></li>
+                            <li><a href="#" class="subitem">Tasks</a></li>
+                            <li><a href="#" class="subitem">Email</a></li>
+                            <li><a href="#" class="subitem">Documents</a></li>
+                          </ul>
+                      </div>   
+                  </ul>  
+          </li>
+       <!--Tools-->
+
+       <!--Reports-->
+       <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">assignment</i>Reports<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="calendar.html" class="subitem">Invoice Details</a></li>
+                <li><a href="#" class="subitem">Payment Details</a></li>
+                <li><a href="#" class="subitem">Customer Balance</a></li>
+                <li><a href="#" class="subitem">Past Due</a></li>
+              </ul>
+          </div>   
+      </ul>  
+</li>
+
+       <!--Reports-->
+
+        <!--support-->
+             <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">call</i>Support<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#" class="subitem">Contact us</a></li>
+                            <li><a href="#" class="subitem">Help</a></li>
+                          </ul>
+                      </div>   
+                  </ul>  
+          </li>
+        <!--support-->
+
+        <!--My Account-->
+         <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons" id="icn">account_circle</i>MyAccount<i class="fa fa-chevron-left rotate" style="float:right"></i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#" class="subitem">Company Info</a></li>
+                        <li><a href="#" class="subitem">Perfernces</a></li>
+                        <li><a href="#" class="subitem">Users</a></li>
+                        <li><a href="#" class="subitem">Billing</a></li>
+                        <li><a href="#" class="subitem">Legal</a></li>
+                      </ul>
+                  </div>   
+              </ul>  
+      </li>
+     <!--My Account-->
+
+    
+
+   <!--end-->
+     </ul> 
+      <!--side nav-->
+     
+      <!--middle content starts here-->
+        
+        <div class="container">
+           <br>
+           <br>
+           <div class="row">
+
+           <h4>Invoices</h4>
+          
+            <div class="row">
+                    
+                    <div id="charts" class="col s7 push-s5 card-content">
+                            <canvas id="myChart"></canvas>
+                            <div id="charts" class="col s7">
+                                    <canvas id="myDoughnutChart"></canvas>
+                                </div>
+                        </div>
+                    
+                    
+                    <div class="col s5 pull-s7">
+                      <div class="card white darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Total Invoices</span>
+                          <p>398</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#"><i class="fa fa-chevron-up" style="color:lightgreen" aria-hidden="true"></i></a>
+                          <a href="#">4%</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s5 pull-s7">
+                            <div class="card white darken-1">
+                              <div class="card-content white-text">
+                                <span class="card-title">Avg Invoice term</span>
+                                <p>398</p>
+                              </div>
+                              <div class="card-action">
+                                <a href="#"><i class="fa fa-chevron-down" style="color:crimson" aria-hidden="true"></i></a>
+                                <a href="#">6%</a>
+                              </div>
+                            </div>
+                          </div>
+                </div>
+                <div class="divider"></div>
+
+
+                <h4>Revenues</h4>
+          
+                <div class="row">
+                        
+                        <div id="charts" class="col s7 push-s5 card-content">
+                                <canvas id="myLineChart"></canvas> 
+
+                                <!-- <div id="line_top_x"></div> -->
+
+                                <!-- <div id="charts" class="col s7">
+                                        <canvas id="myDoughnutChart"></canvas>
+                                    </div> -->
+                            </div>
+                        
+                        
+                        <div class="col s5 pull-s7">
+                          <div class="card white darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">Total Invoices</span>
+                              <p>398</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#"><i class="fa fa-chevron-up" style="color:lightgreen" aria-hidden="true"></i></a>
+                              <a href="#">4%</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s5 pull-s7">
+                                <div class="card white darken-1">
+                                  <div class="card-content white-text">
+                                    <span class="card-title">Avg Invoice term</span>
+                                    <p>398</p>
+                                  </div>
+                                  <div class="card-action">
+                                    <a href="#"><i class="fa fa-chevron-down" style="color:crimson" aria-hidden="true"></i></a>
+                                    <a href="#">6%</a>
+                                  </div>
+                                </div>
+                              </div>  
+                        <div  class="col m12">
+                                <canvas id="myBarChart"></canvas>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col m5">
+                        <div class="card white darken-1 cards">
+                          <div class="card-content white-text">
+                            <span class="card-title">To do's</span>
+                          </div>
+                       
+                          <div class="card-content" id="dotasks">
+                            
+                           <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Alice to be contancted</span>
+                              </label>
+                            </p>
+                            <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Usha snapshot to be reviewed</span>
+                                </label>
+                              </p>
+                              <span class="card-title">Finished To Do's</span>
+                            
+                              <p>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" checked="checked"/>
+                                    <span style="text-decoration:line-through">josh has been Contacted for Lead</span>
+                                  </label>
+                                </p>
+                                <p>
+                                    <label>
+                                      <input type="checkbox" class="filled-in" checked="checked"/>
+                                      <span style="text-decoration:line-through">Uman document reviewed</span>
+                                    </label>
+                                  </p>
+                              
+                          </div>
+                        
+                        </div>
+                      </div>  
+                   
+                      <div id="charts" class="col m7">
+                            <canvas id="myPieChart"></canvas>
+
+                      </div>
+                    
+                         <!----full calendar-->
+         <div class="container">
+                <div class="row">
+                                     
+                 <div class="col m9 calendercontent">
+                     <div class="ibox float-e-margins">
+                         <div class="ibox-title">
+                     
+                         </div>
+                         <div class="ibox-content">
+                             <div id="calendar"></div>
+                         </div>
+                        
+                     </div>
+                   
+                 </div>
+                 <div class="col m3">
+                         <div class="calendarevents">
+                                 <div id='external-events'>
+                                     <p>Drag a event and drop into callendar.</p>
+                                     <div class='external-event navy-bg'>Go to shop and buy some products.</div>
+                                     <div class='external-event navy-bg'>Check the new CI from Corporation.</div>
+                                     <div class='external-event navy-bg'>Send documents to John.</div>
+                                     <div class='external-event navy-bg'>Phone to Sandra.</div>
+                                     <div class='external-event navy-bg'>Chat with Michael.</div>
+                             
+                                 </div>
+                             </div>
+                         </div>
+                 </div>
+              </div> 
+     
+     
+              <!--full calendar-->
+
+                  <!--end of second row-->
+                </div>  
+
+      
+          
+                
+   <!--end of container-->         
+</div>
+
+    
+
+              
+         
+                
+
+         
+
+      <!--middle content ends here-->
+        <!--scripts-->
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/plugins/fullcalendar/moment.min.js"></script>
+        <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+        
+<!-- Mainly scripts -->
+<script src="js/plugins/fullcalendar/moment.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<!-- Custom and plugin javascript -->
+<!-- <script src="js/inspinia.js"></script> -->
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- jQuery UI custom -->
+<script src="js/jquery-ui.custom.min.js"></script>
+
+<!-- iCheck -->
+<script src="js/plugins/iCheck/icheck.min.js"></script>
+
+<!-- Full Calendar -->
+<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<!-- <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script> -->
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+        <script>
+         document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, {"edge":"left"});
+        });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+       $('.collapsible').collapsible();
+       $('.tabs').tabs();
+       
+        
+        var ctx = document.getElementById('myChart');
+   
+        var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+            label: '# of Invoices',
+            data: [12, 19, 30, 50, 60, 70],
+            backgroundColor: [
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderColor: [
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+// Donut chart
+
+ var cttx = document.getElementById('myDoughnutChart');
+ var myDoughnutChart = new Chart(cttx, {
+    type: 'doughnut',
+    data: {
+        labels: [
+        'Grey',
+        'Green',
+        'Pink'
+    ],
+    datasets: [{
+        data: [10, 20, 30],
+        
+    backgroundColor: [
+                'rgba(67, 68, 68, 1)',
+                'rgba(61, 181, 66, 1)',
+                'rgba(230, 164, 166, 1)'
+            ],
+    borderColor: [
+               'rgba(67, 68, 68, 1)',
+               'rgba(61, 181, 66, 1)',
+               'rgba(230, 164, 166, 1)'
+            ]
+    }],
+},
+
+    options: {
+        "animation.animateRotate": "true"
+    }
+});
+
+var dataFirst = {
+    label: "Expected",
+    data: [0, 59, 75, 20, 20, 55, 40],
+    lineTension: 0.3,
+    fill: false,
+    borderColor: 'rgba(255, 99, 132, 1)',
+    backgroundColor: 'transparent',
+    pointBorderColor: 'rgba(255, 99, 132, 1)',
+    pointBackgroundColor: 'lightgreen',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2,
+    pointStyle: 'rect'
+  };
+
+var dataSecond = {
+    label: "Actual",
+    data: [20, 15, 60, 60, 65, 30, 70],
+    lineTension: 0.3,
+    fill: false,
+    borderColor:  'rgba(54, 162, 235, 1)',
+    backgroundColor: 'transparent',
+    pointBorderColor:  'rgba(54, 162, 235, 1)',
+    pointBackgroundColor: 'lightgreen',
+    pointRadius: 5,
+    pointHoverRadius: 15,
+    pointHitRadius: 30,
+    pointBorderWidth: 2
+  };
+
+var speedData = {
+  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  datasets: [dataFirst, dataSecond]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+//line chart initialization
+var ctxc = document.getElementById('myLineChart');
+var myLineChart = new Chart(ctxc, {
+    type: 'line',
+    data: speedData,
+    options:chartOptions
+});
+
+//Second Bar chart
+var cctx = document.getElementById('myBarChart');
+   
+   var myChart = new Chart(cctx, {
+type: 'bar',
+data: {
+   labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+   datasets: [{
+       label: 'Monthly Recurring Revenue',
+       data: [12, 19, 50, 30, 60, 5],
+       backgroundColor: [
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)'
+       ],
+       borderColor: [
+          'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)',
+           'rgba(70, 107, 162, 1)'
+       ],
+       borderWidth: 1
+   }]
+},
+options: {
+   scales: {
+       yAxes: [{
+           ticks: {
+               beginAtZero: true
+           }
+       }]
+   }
+}
+});
+
+
+
+//tooltips intialisation
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+
+//calendar script//
+$('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+
+        /* initialize the external events
+         -----------------------------------------------------------------*/
+
+
+        $('#external-events div.external-event').each(function() {
+
+            // store data so the calendar knows to render an event upon drop
+            $(this).data('event', {
+                title: $.trim($(this).text()), // use the element's text as the event title
+                stick: true // maintain when user navigates (see docs on the renderEvent method)
+            });
+
+            // make the event draggable using jQuery UI
+            $(this).draggable({
+                zIndex: 1111999,
+                revert: true,      // will cause the event to go back to its
+                revertDuration: 0  //  original position after the drag
+            });
+
+        });
+
+
+        /* initialize the calendar
+         -----------------------------------------------------------------*/
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            editable: true,
+            droppable: true, // this allows things to be dropped onto the calendar
+            drop: function() {
+                // is the "remove after drop" checkbox checked?
+                if ($('#drop-remove').is(':checked')) {
+                    // if so, remove the element from the "Draggable Events" list
+                    $(this).remove();
+                }
+            },
+            events: [
+                {
+                    title: 'All Day Event',
+                    start: new Date(y, m, 1)
+                },
+                {
+                    title: 'Long Event',
+                    start: new Date(y, m, d-5),
+                    end: new Date(y, m, d-2),
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: new Date(y, m, d-3, 16, 0),
+                    allDay: false,
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: new Date(y, m, d+4, 16, 0),
+                    allDay: false
+                },
+                {
+                    title: 'Meeting',
+                    start: new Date(y, m, d, 10, 30),
+                    allDay: false
+                },
+                {
+                    title: 'Lunch',
+                    start: new Date(y, m, d, 12, 0),
+                    end: new Date(y, m, d, 14, 0),
+                    allDay: false
+                },
+                {
+                    title: 'Birthday Party',
+                    start: new Date(y, m, d+1, 19, 0),
+                    end: new Date(y, m, d+1, 22, 30),
+                    allDay: false
+                },
+                {
+                    title: 'Click for Google',
+                    start: new Date(y, m, 28),
+                    end: new Date(y, m, 29),
+                    url: 'http://google.com/'
+                }
+            ],
+        });
+//pie chart initialization
+var ctxx=document.getElementById("myPieChart")
+var myPieChart = new Chart(ctxx, {
+    type: 'pie',
+
+    data: {
+        labels: [
+        'Contacted',
+        'Working',
+        'New',
+        'Pending'
+    ],
+    datasets: [{
+        data: [10, 20, 30, 50],
+        
+    backgroundColor: [
+                'rgba(67, 68, 68, 1)',
+                'rgba(61, 181, 66, 1)',
+                'rgba(230, 164, 166, 1)',
+                'rgba(75, 192, 192, 1)',
+                // 'rgba(153, 102, 255, 1)',
+                // 'rgba(255, 159, 64, 1)'
+            ],
+    borderColor: [
+               'rgba(67, 68, 68, 1)',
+               'rgba(61, 181, 66, 1)',
+               'rgba(230, 164, 166, 1)',
+                'rgba(75, 192, 192, 1)',
+                // 'rgba(153, 102, 255, 1)',
+                // 'rgba(255, 159, 64, 1)'
+            ]
+    }],
+},
+
+    options: {
+        "animation.animateRotate": "true"
+    }
+
+});
+
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+  $(".collapsible").click(function () {
+    $(".rotate").toggleClass("down");
+})        
+
+});
+
+</script>
+        <!--scripts-->
+    </body>
+</html>
+
+
+
+
+
+
+
