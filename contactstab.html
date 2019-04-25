@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
         <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     
         <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
     
@@ -28,10 +27,9 @@
 
 
                   <li><a href="#" class="tooltipped" id="helpicn" data-position="bottom" data-tooltip="Help"><i class="material-icons">help</i></a></li>
-                  <li><a href="#" class="tooltipped" id="bellicn" data-position="bottom" data-tooltip="Notifications"><i class="material-icons">notifications_none</i></a></li>
+                  <li><a href="#" class="tooltipped" id="bellicn" data-position="bottom" data-tooltip="Notifications"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
 
                   <li><a href="#" class="tooltipped" id="exiticn" data-position="bottom" data-tooltip="Logout"><i class="material-icons">exit_to_app</i></a></li>
-                    <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
                     
                 </ul>
             </div>
@@ -45,6 +43,7 @@
                 </div>
               </div>
             </nav> -->
+     
          
       <!--side nav-->
       
@@ -136,82 +135,919 @@
       <!--side nav-->
      
       <!--middle content starts here-->
-        
-      <div class="container">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col m12" style="margin-top:8%;">
+              <a class="waves-effect waves-light btn-small">Save</a>
 
-          <div class="row">
-              <form class="col m12">
-                <div class="row">
-                  <div class="input-field col m6">
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                  </div>
-                  
-                </div>
-                <div class="row">
-                  <div class="input-field col m6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Lastname</label>
-                  </div>
+            <ul class="tabs">
+              <li class="tab col s2"><a class="active" href="#test1">PrimaryContact</a></li>
+              <li class="tab col s2"><a  href="#test2">AdditionalContacts</a></li>
+              <li class="tab col s2 "><a href="#test3">Invoice</a></li>
+              <li class="tab col s2"><a href="#test4">Documents</a></li>
+              <li class="tab col s2"><a href="#test5">Notes</a></li>
+
+            </ul>
+            <div id="test1" class="col s12">
+              
+              <!-- Test 1 -->
+                        <!--first row starts here-->
+           <div class="row">
+             
+              <div class="col m6">
+               <form id="form1">
+                  <div class="row rowadj">
+                    <h5>Primary Contact</h5>
+                      <div class="input-field col m12">
+                         <i class="material-icons prefix">account_circle</i>
+                         <input id="firstname" type="text" class="validate">
+                         <label for="firstname">First Name</label>
+                      </div>
+                      </div>
+                 <!-- <div class="row rowadj">
+                   <div class="input-field col m12">
+                       <input id="last_name" type="text" class="validate">
+                       <label for="last_name">Lastname</label>
+                   </div>
+                 </div> -->
+                 <div class="row rowadj">
+                 <div class="input-field col m12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="lastname" type="text" class="validate">
+                    
+                 </div>
+                 </div>
+                 <div class="row  rowadj">
+                   <div class="input-field col m12">
+                      <i class="material-icons prefix">business</i>
+                       <input id="company" type="text" class="validate">
+                       <label for="company">Company</label>
+                   </div>
+                 </div>
+                 <div class="row  rowadj">
+                   <div class="input-field col m12">
+                      <i class="material-icons prefix">email</i>
+                     <input id="email" type="email" class="validate">
+                     <label for="email">Email</label>
+                   </div>
+                   
+                 </div>
+                 <div class="row  rowadj">
+                     <div class="input-field col m12">
+                        <i class="material-icons prefix">local_phone</i>
+                       <input id="phone" type="text" class="validate">
+                       <label for="phone">Phone</label>
+                     </div>
+                     
+                   </div>
+                   <div class="row  rowadj">
+                     <div class="input-field col m12">
+                        <i class="fa fa-mobile prefix" aria-hidden="true"></i>
+                       <input id="cell" type="text" class="validate">
+                       <label for="cell">Cell</label>
+                     </div>
+                     
+                   </div>
+               </form>
+               </div>
+            <div class="col m6">
+            <form id="form2">      
+                <div class="row rowadj">
+                  <h5>Billing Address</h5>
+                   <div class="input-field col m12"> 
+                      <i class="material-icons prefix">contact_mail</i>
+                    <input id="address" type="text" class="validate">
+                      <label for="address">Address</label>
+                  </div>                 
+               </div>
+           <div class="row  rowadj">
+            <div class="input-field col m12">
+                <i class="material-icons prefix">ac_unit</i>
+             <input type="text" id="unit" class="validate">
+             <label for="unit">Unit</label>
+           </div>
+         </div>
+       <div class="row  rowadj">
+         <div class="input-field col m12">
+            <i class="material-icons prefix">location_city</i>
+           <input id="city" type="text" class="validate">
+           <label for="city">City</label>
+         </div>
+      </div>
+ 
+      <div class="row  rowadj">
+         <div class="input-field col m12">
+            <i class="fa fa-globe prefix" aria-hidden="true"></i>
+            <input id="state" type="text" class="validate">
+           <label for="state">State</label>
+       </div>
+     </div>
+     <div class="row  rowadj">
+         <div class="input-field col m12">
+            <i class="material-icons prefix">chrome_reader_mode</i>
+           <input id="zip" type="text" class="validate">
+           <label for="zipcode">Zip</label>
+         </div>
+     </div>
+ 
+      <div class="row  rowadj">
+         <div class="input-field col m12">
+            <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+             <input id="country" type="text" class="validate">
+             <label for="country">Country</label>
+           </div>
+      </div>
+   </form>
+    </div>
+ 
+ </div>
+ <!--first row ends here-->
+ <!--second row starts here-->
+        <div class="row">
+          <div class="col m6">
+           <form id="form3">
+             <div class="row  rowadj">
+                 <h5>Other</h5>
+               <div class="input-field col m12">
+                  <i class="material-icons prefix">loyalty</i>
+                 <input id="status" type="text" class="validate">
+                 <label for="status">Status</label>
+               </div>
+               
+             </div>
+             <div class="row  rowadj">
+               <div class="input-field col m12">
+                  <i class="material-icons prefix">adjust</i>
+                   <input id="stage" type="text" class="validate">
+                   <label for="stage">Stage</label>
+               </div>
+              
+             </div>
+             <div class="row  rowadj">
+               <div class="input-field col m12">
+                  <i class="material-icons prefix">low_priority</i>
+                 <input id="priority" type="text" class="validate">
+                 <label for="priority">Priority</label>
+               </div>
+              
+             </div>
+             <div class="row  rowadj">
+               <div class="input-field col m12">
+                  <i class="material-icons prefix">cake</i>
+                 <input id="bday" type="text" class="validate">
+                 <label for="bday">Birthday</label>
+               </div>
+               
+             </div>
+             <div class="row  rowadj">
+                 <div class="input-field col m12">
+                   <input id="ss" type="text" class="validate">
+                   <label for="ss">SS#</label>
+                 </div>
                  
+               </div>
+               <div class="row  rowadj">
+                   <div class="input-field col m12">
+                     <input id="dependents" type="text" class="validate">
+                     <label for="dependents">Dependents</label>
+                   </div>
+                   
+                 </div>
+                 <div class="row  rowadj">
+                     <div class="input-field col m12">
+                        <i class="fa fa-usd prefix" aria-hidden="true"></i>
+                       <input id="gincome" type="text" class="validate">
+                       <label for="gincome">Gross Income</label>
+                     </div>
+                     
+                   </div>
+                   <div class="row  rowadj">
+                       <div class="input-field col m12">
+                          <i class="material-icons prefix">business_center</i>
+                         <input id="empstatus" type="text" class="validate">
+                         <label for="empstatus">Employment-Status</label>
+                       </div>
+                       
+                     </div>
+                     <div class="row  rowadj">
+                         <div class="input-field col m12">
+                            <i class="fa fa-calendar prefix" aria-hidden="true"></i>
+                           <input id="monthsempl" type="text" class="validate">
+                           <label for="monthsempl">Months-Employed</label>
+                         </div>
+                         
+                       </div>
+           </form>
+           </div>
+ 
+       <div class="col m6">
+        <form id="form4">      
+            <div class="row  rowadj">
+                <h5 id="shipadresdiv">Shipping Address
+                    <span class="switch">
+                        <label>
+                        
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                        
+                          <span>Same as Billing Address</span>
+                        </label>
+                    
+                      </span>
+                    
+                </h5>
+              <div class="input-field col m12">
+                  <i class="material-icons prefix">contact_mail</i>
+                <input id="adres" type="text" class="validate">
+                <label for="adres">Address</label>
+              </div>
+              
+            </div>
+       <div class="row rowadj">
+        <div class="input-field col m12">
+            <i class="material-icons prefix">ac_unit</i>
+         <input type="text" id="units" class="validate">
+         <label for="units">Unit</label>
+       </div>
+     </div>
+   <div class="row rowadj">
+     <div class="input-field col m12">
+        <i class="material-icons prefix">location_city</i>
+       <input id="cityy" type="text" class="validate">
+       <label for="cityy">City</label>
+     </div>
+  </div>
+ 
+  <div class="row rowadj">
+     <div class="input-field col m12">
+        <i class="fa fa-globe prefix" aria-hidden="true"></i>
+        <input id="states" type="text" class="validate">
+       <label for="states">State</label>
+   </div>
+ </div>
+ <div class="row rowadj">
+     <div class="input-field col m12">
+        <i class="material-icons prefix">chrome_reader_mode</i>
+       <input id="zipcode" type="text" class="validate">
+       <label for="zip">Zip</label>
+     </div>
+ </div>
+ 
+  <div class="row rowadj">
+     <div class="input-field col m12">
+        <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+         <input id="cntry" type="text" class="validate">
+         <label for="cntry">Country</label>
+       </div>
+  </div>
+ </form>
+ </div>
+ </div>
+   <!-- second row ends here-->
+   
+          
+            <!--end of test1 div-->
+            </div>
+      
+          <div id="test2" class="col s12">
+            <!-- Test 2 -->
+                   <!--first row starts here-->
+           <div class="row">
+             
+              <div class="col m6">
+               <form id="form1">
+                  <div class="row rowadj">
+                    <h5>Additional Contact1</h5>
+                      <div class="input-field col m12">
+                         <i class="material-icons prefix">account_circle</i>
+                         <input id="firstname" type="text" class="validate">
+                         <label for="firstname">First Name</label>
+                      </div>
+                      </div>
+                 <!-- <div class="row rowadj">
+                   <div class="input-field col m12">
+                       <input id="last_name" type="text" class="validate">
+                       <label for="last_name">Lastname</label>
+                   </div>
+                 </div> -->
+                 <div class="row rowadj">
+                 <div class="input-field col m12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="lastname" type="text" class="validate">
+                    <label for="lastname">Last Name</label>
+                 </div>
+                 </div>
+                 <div class="row  rowadj">
+                   <div class="input-field col m12">
+                      <i class="material-icons prefix">business</i>
+                       <input id="company" type="text" class="validate">
+                       <label for="company">Company</label>
+                   </div>
+                 </div>
+                 <div class="row  rowadj">
+                   <div class="input-field col m12">
+                      <i class="material-icons prefix">email</i>
+                     <input id="email" type="email" class="validate">
+                     <label for="email">Email</label>
+                   </div>
+                   
+                 </div>
+                 <div class="row  rowadj">
+                     <div class="input-field col m12">
+                        <i class="material-icons prefix">local_phone</i>
+                       <input id="phone" type="text" class="validate">
+                       <label for="phone">Phone</label>
+                     </div>
+                     
+                   </div>
+                   <div class="row  rowadj">
+                     <div class="input-field col m12">
+                        <i class="fa fa-mobile prefix" aria-hidden="true"></i>
+                       <input id="cell" type="text" class="validate">
+                       <label for="cell">Cell</label>
+                     </div>
+                     
+                   </div>
+               </form>
+               </div>
+            <div class="col m6">
+            <form id="form2">      
+                <div class="row rowadj">
+                  <h5>Additional Contact2</h5>
+                  <div class="input-field col m12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="firstname" type="text" class="validate">
+                      <label for="firstname">First Name</label>
+                   </div>
+                   </div>
+              <!-- <div class="row rowadj">
+                <div class="input-field col m12">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Lastname</label>
                 </div>
-                <div class="row">
-                  <div class="input-field col m6">
-                    <input id="comapny" type="text" class="validate">
+              </div> -->
+              <div class="row rowadj">
+              <div class="input-field col m12">
+                 <i class="material-icons prefix">account_circle</i>
+                 <input id="lastname" type="text" class="validate">
+                 <label for="lastname">Last Name</label>
+              </div>
+              </div>
+              <div class="row  rowadj">
+                <div class="input-field col m12">
+                   <i class="material-icons prefix">business</i>
+                    <input id="company" type="text" class="validate">
                     <label for="company">Company</label>
-                  </div>
-                 
                 </div>
-                <div class="row">
-                  <div class="input-field col m6">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
+              </div>
+              <div class="row  rowadj">
+                <div class="input-field col m12">
+                   <i class="material-icons prefix">email</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+                
+              </div>
+              <div class="row  rowadj">
+                  <div class="input-field col m12">
+                     <i class="material-icons prefix">local_phone</i>
+                    <input id="phone" type="text" class="validate">
+                    <label for="phone">Phone</label>
                   </div>
                   
                 </div>
-                <div class="row">
-                    <div class="input-field col m6">
-                      <input id="phone" type="text" class="validate">
-                      <label for="phone">Phone</label>
+                <div class="row  rowadj">
+                  <div class="input-field col m12">
+                     <i class="fa fa-mobile prefix" aria-hidden="true"></i>
+                    <input id="cell" type="text" class="validate">
+                    <label for="cell">Cell</label>
+                  </div>
+                  
+                </div>
+   </form>
+    </div>
+ 
+ </div>
+ <!--first row ends here-->
+ <!--second row starts here-->
+        <div class="row">
+          <div class="col m6">
+           <form id="form3">
+             <!-- <div class="row  rowadj"> -->
+                 <h5>Other</h5>
+             
+             <div class="row  rowadj">
+               <div class="input-field col m12">
+                  <i class="material-icons prefix">cake</i>
+                 <input id="bday" type="text" class="validate">
+                 <label for="bday">Birthday</label>
+               </div>
+               
+             </div>
+             <div class="row  rowadj">
+                 <div class="input-field col m12">
+                   <input id="ss" type="text" class="validate">
+                   <label for="ss">SS#</label>
+                 </div>
+                 
+               </div>
+               <div class="row  rowadj">
+                   <div class="input-field col m12">
+                     <input id="dependents" type="text" class="validate">
+                     <label for="dependents">Dependents</label>
+                   </div>
+                   
+                 </div>
+                 <div class="row  rowadj">
+                     <div class="input-field col m12">
+                        <i class="fa fa-usd prefix" aria-hidden="true"></i>
+                       <input id="gincome" type="text" class="validate">
+                       <label for="gincome">Gross Income</label>
+                     </div>
+                     
+                   </div>
+                   <div class="row  rowadj">
+                       <div class="input-field col m12">
+                          <i class="material-icons prefix">business_center</i>
+                         <input id="empstatus" type="text" class="validate">
+                         <label for="empstatus">Employment-Status</label>
+                       </div>
+                       
+                     </div>
+                     <div class="row  rowadj">
+                         <div class="input-field col m12">
+                            <i class="fa fa-calendar prefix" aria-hidden="true"></i>
+                           <input id="monthsempl" type="text" class="validate">
+                           <label for="monthsempl">Months-Employed</label>
+                         </div>
+                         
+                       </div>
+           </form>
+           </div>
+ 
+       <div class="col m6">
+        <form id="form4">      
+            <h5>Other</h5>
+            <div class="row  rowadj">
+                <div class="input-field col m12">
+                   <i class="material-icons prefix">cake</i>
+                  <input id="bday" type="text" class="validate">
+                  <label for="bday">Birthday</label>
+                </div>
+                
+              </div>
+              <div class="row  rowadj">
+                  <div class="input-field col m12">
+                    <input id="ss" type="text" class="validate">
+                    <label for="ss">SS#</label>
+                  </div>
+                  
+                </div>
+                <div class="row  rowadj">
+                    <div class="input-field col m12">
+                      <input id="dependents" type="text" class="validate">
+                      <label for="dependents">Dependents</label>
                     </div>
                     
                   </div>
-                  <div class="row">
-                      <div class="input-field col m6">
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Cell</label>
+                  <div class="row  rowadj">
+                      <div class="input-field col m12">
+                         <i class="fa fa-usd prefix" aria-hidden="true"></i>
+                        <input id="gincome" type="text" class="validate">
+                        <label for="gincome">Gross Income</label>
                       </div>
                       
                     </div>
-          
-              </form>
-             
-            </div>
+                    <div class="row  rowadj">
+                        <div class="input-field col m12">
+                           <i class="material-icons prefix">business_center</i>
+                          <input id="empstatus" type="text" class="validate">
+                          <label for="empstatus">Employment-Status</label>
+                        </div>
+                        
+                      </div>
+                      <div class="row  rowadj">
+                          <div class="input-field col m12">
+                             <i class="fa fa-calendar prefix" aria-hidden="true"></i>
+                            <input id="monthsempl" type="text" class="validate">
+                            <label for="monthsempl">Months-Employed</label>
+                          </div>
+                          
+                        </div>
+ 
+ </form>
+ </div>
+ </div>
+ 
+
+   <!-- second row ends here-->
+   <!--third row starts here-->
+   <div class="row">
+   <div class="col m6">
+      <form id="form4">      
+          <div class="row  rowadj">
+              <h5 id="shipadresdiv">Billing Address
+                  <span class="switch">
+                      <label>
+                      
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                      
+                        <span>Same as PrimaryContact</span>
+                      </label>
                   
-      <!--end of container-->
-      </div>
+                    </span>
+                  
+              </h5>
+            <div class="input-field col m12">
+                <i class="material-icons prefix">contact_mail</i>
+              <input id="adres" type="text" class="validate">
+              <label for="adres">Address</label>
+            </div>
+            
+          </div>
+     <div class="row rowadj">
+      <div class="input-field col m12">
+          <i class="material-icons prefix">ac_unit</i>
+       <input type="text" id="units" class="validate">
+       <label for="units">Unit</label>
+     </div>
+   </div>
+ <div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="material-icons prefix">location_city</i>
+     <input id="cityy" type="text" class="validate">
+     <label for="cityy">City</label>
+   </div>
+</div>
 
+<div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="fa fa-globe prefix" aria-hidden="true"></i>
+      <input id="states" type="text" class="validate">
+     <label for="states">State</label>
+ </div>
+</div>
+<div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="material-icons prefix">chrome_reader_mode</i>
+     <input id="zipcode" type="text" class="validate">
+     <label for="zip">Zip</label>
+   </div>
+</div>
+
+<div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+       <input id="cntry" type="text" class="validate">
+       <label for="cntry">Country</label>
+     </div>
+</div>
+</form>
+</div>
+
+<div class="col m6">
+    <form id="form4">      
+        <div class="row  rowadj">
+            <h5 id="shipadresdiv">Billing Address
+                <span class="switch">
+                    <label>
                     
+                      <input type="checkbox">
+                      <span class="lever"></span>
                     
-          
-   
-                     
-          
-             
-      
-
-
-    
-
-              
-         
+                      <span>Same as PrimaryContact</span>
+                    </label>
                 
+                  </span>
+                
+            </h5>
+          <div class="input-field col m12">
+              <i class="material-icons prefix">contact_mail</i>
+            <input id="adres" type="text" class="validate">
+            <label for="adres">Address</label>
+          </div>
+          
+        </div>
+   <div class="row rowadj">
+    <div class="input-field col m12">
+        <i class="material-icons prefix">ac_unit</i>
+     <input type="text" id="units" class="validate">
+     <label for="units">Unit</label>
+   </div>
+ </div>
+<div class="row rowadj">
+ <div class="input-field col m12">
+    <i class="material-icons prefix">location_city</i>
+   <input id="cityy" type="text" class="validate">
+   <label for="cityy">City</label>
+ </div>
+</div>
 
-         
+<div class="row rowadj">
+ <div class="input-field col m12">
+    <i class="fa fa-globe prefix" aria-hidden="true"></i>
+    <input id="states" type="text" class="validate">
+   <label for="states">State</label>
+</div>
+</div>
+<div class="row rowadj">
+ <div class="input-field col m12">
+    <i class="material-icons prefix">chrome_reader_mode</i>
+   <input id="zipcode" type="text" class="validate">
+   <label for="zip">Zip</label>
+ </div>
+</div>
 
+<div class="row rowadj">
+ <div class="input-field col m12">
+    <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+     <input id="cntry" type="text" class="validate">
+     <label for="cntry">Country</label>
+   </div>
+</div>
+</form>
+</div>
+
+</div>
+   <!--third row ends here-->
+  
+   <!--fourth row strts here-->
+   <div class="row">
+   <div class="col m6">
+      <form id="form4">      
+          <div class="row  rowadj">
+              <h5 id="shipadresdiv">Shipping Address
+                  <span class="switch">
+                      <label>
+                      
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                      
+                        <span>Same as Billing Address</span>
+                      </label>
+                  
+                    </span>
+                  
+              </h5>
+            <div class="input-field col m12">
+                <i class="material-icons prefix">contact_mail</i>
+              <input id="adres" type="text" class="validate">
+              <label for="adres">Address</label>
+            </div>
+            
+          </div>
+     <div class="row rowadj">
+      <div class="input-field col m12">
+          <i class="material-icons prefix">ac_unit</i>
+       <input type="text" id="units" class="validate">
+       <label for="units">Unit</label>
+     </div>
+   </div>
+  <div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="material-icons prefix">location_city</i>
+     <input id="cityy" type="text" class="validate">
+     <label for="cityy">City</label>
+   </div>
+  </div>
+  
+  <div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="fa fa-globe prefix" aria-hidden="true"></i>
+      <input id="states" type="text" class="validate">
+     <label for="states">State</label>
+  </div>
+  </div>
+  <div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="material-icons prefix">chrome_reader_mode</i>
+     <input id="zipcode" type="text" class="validate">
+     <label for="zip">Zip</label>
+   </div>
+  </div>
+  
+  <div class="row rowadj">
+   <div class="input-field col m12">
+      <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+       <input id="cntry" type="text" class="validate">
+       <label for="cntry">Country</label>
+     </div>
+  </div>
+  </form>
+  </div>
+  
+  </div>
+   <!--fourth row ends here-->
+   
+          <!--end of test2 div-->
+          </div>
+          <div id="test3" class="col s12">
+            <!-- Test 3 -->
+            <h4 style="text-align: center">New Invoice</h4>
+            <h5>#Invoice Details</h5>
+            <!--invoice form row-->
+            <div class="row">
+                <div class="col m4" id="invcform">
+               <form>
+                  <div class="row rowadj">
+                      <div class="input-field col m12">
+                         <input id="invoice" type="text" class="validate">
+                         <label for="invoice">Invoice</label>
+                      </div>
+                      </div>
+                
+                 <div class="row rowadj">
+                 <div class="input-field col m12">
+                    <input id="term" type="text" class="validate">
+                    <label for="term">Term</label>
+                 </div>
+                 </div>
+                 <div class="row  rowadj">
+                   <div class="input-field col m12">
+                       <input id="date" type="text" class="validate">
+                       <label for="date">StartDate</label>
+                   </div>
+                 </div>
+                 <div class="row  rowadj">
+                   <div class="input-field col m12">
+                     <input id="user" type="email" class="validate">
+                     <label for="user">User</label>
+                   </div>
+                   
+                 </div>  
+               </form>
+
+            </div> 
+          
+        <!--invoice form row-->
+          </div>
+        <!--table row-->
+          <div class="row">
+            <table border="1" cellspacing="0" cellpadding="10">
+              <tr>
+                <th>Item Details</th>
+                <th>Qty</th>
+                <th>UnitPrice</th>
+                <th>TotalPrice</th>
+              </tr>
+            <td>
+              
+         Type or click to select item
+
+            </td>
+            <td>
+              0
+            </td>
+           <td>
+             0
+           </td>
+           <td>0.00</td>
+            </table>
+          <!--end of table row-->
+          </div>
+          <div class="row">
+            <div class="col m6">
+              Notes
+            <textarea cols="30" rows="50"></textarea>
+            </div>
+            <div class="row">
+               <div class="col m4" id="feediv">
+                  <form>
+                    Fee Structure
+                      <div class="row rowadj">
+                          <div class="input-field col m12">
+                             <input id="invoicess" type="text" class="validate">
+                             <label for="invoicess">Total Invoice</label>
+                          </div>
+                          </div>
+                    
+                     <div class="row rowadj">
+                     <div class="input-field col m12">
+                        <input id="fee" type="text" class="validate">
+                        <label for="fee">Fee</label>
+                     </div>
+                     </div>
+                    
+                   </form>
+               </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col m6">
+              <h5>Payment Schedule(Select One)</h5>
+                <form action="#">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>OneTimePayment</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Weekly</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>Monthly</span>
+                      </label>
+                    </p>
+                  
+                  </form>
+                        
+            </div>
+            <div class="col m6">
+                <form>
+                  <h5>Summary</h5>
+                    <div class="row rowadj">
+                        <div class="input-field col m12">
+                           <input id="pay" type="text" class="validate">
+                           <label for="pay">ClientPayment$</label>
+                        </div>
+                        </div>
+                  
+                   <div class="row rowadj">
+                   <div class="input-field col m12">
+                      <input id="servicfee" type="text" class="validate">
+                      <label for="servicfee">Service Fee(%)</label>
+                   </div>
+                   </div>
+                   <div class="row rowadj">
+                      <div class="input-field col m12">
+                         <input id="remitance" type="text" class="validate">
+                         <label for="remitance">Remittance($)</label>
+                      </div>
+                      </div>
+                  
+                 </form>
+            </div>
+          </div>
+        <!--end of test3 div-->
+          </div>
+          <div id="test4" class="col s12">
+            <!-- Test 4 -->
+            <table border="1" cellspacing="0" cellpadding="10">
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Date Added</th>
+                <th>
+                    <form action="#">
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>File</span>
+                            <input type="file" multiple>
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                          </div>
+                        </div>
+                      </form>
+                </th>
+              </tr>
+            <td>
+              
+         No files currently uploaded
+
+            </td>
+           
+            </table>
+        <!--end of test4 div-->
+          </div>
+          <div id="test5" class="col s12">
+            <!-- Test 5 -->
+            <table border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Date Added</th>
+                  <th>
+                    <button class="btn btn-warning">AddNotes</button>
+                  </th>
+                </tr>
+              <td>
+                
+           No files currently uploaded
+  
+              </td>
+             
+              </table>
+          </div>
+
+    <!--end of first col s12 div-->
+          </div>
+    <!--end of tabs div row-->
+        </div>      
+<!--end of conatiner fluid-->
+        </div>
+    
       <!--middle content ends here-->
         <!--scripts-->
-        <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
@@ -254,9 +1090,9 @@
       $(document).ready(function(){
        $('.sidenav').sidenav();
        $('.collapsible').collapsible();
-       $('.tabs').tabs();
-       
-        
+       $(".tabs").tabs();
+       $(".tabs1").tabs();
+
         var ctx = document.getElementById('myChart');
    
         var myChart = new Chart(ctx, {
@@ -286,13 +1122,14 @@
         }]
     },
     options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
+      scales: {
+       xAxes: [{
+        barThickness: 35,
+           ticks: {
+               beginAtZero: true
+           }
+       }]
+   }
     }
 });
 // Donut chart
@@ -325,8 +1162,16 @@
 },
 
     options: {
-        "animation.animateRotate": "true"
-    },
+        // "animation.animateRotate": "true",
+        scales: {
+       xAxes: [{
+        barThickness: 37,
+           ticks: {
+               beginAtZero: true
+           }
+       }]
+   }
+    }
   
 });
 
@@ -336,8 +1181,8 @@ var dataFirst = {
     lineTension: 0.3,
     fill: true,
    
-    borderColor: 'rgba(135, 206, 192, 1)' ,
-    backgroundColor:   'rgba(135, 206, 192, 1)',
+    borderColor: 'rgba(125, 217, 230, 1)' ,
+    backgroundColor:   'rgba(125, 217, 230, 1)',
     // pointBorderColor: 'rgba(255, 99, 132, 1)',
     // pointBackgroundColor: 'lightgreen',
     pointRadius: 5,
@@ -352,8 +1197,8 @@ var dataSecond = {
     data: [65, 59, 80, 81, 56, 55, 40],
     lineTension: 0.3,
     fill: true,
-    borderColor: 'rgb(237,237,237, 1)',
-    backgroundColor: 'rgb(237,237,237, 1)',
+    borderColor: 'rgb(160,139,226, 1)',
+    backgroundColor: 'rgb(160,139,226, 1)',
     
     // pointBorderColor:  'rgba(54, 162, 235, 1)',
     // pointBackgroundColor: 'lightgreen',
@@ -453,17 +1298,17 @@ var myPieChart = new Chart(ctxx, {
         data: [10, 20, 30, 50],
         
     backgroundColor: [
-                'rgb(223, 82, 104)',
-                'rgb(9, 195, 182)',
-                'rgb(40, 137, 232)',
-                'rgba(254, 187, 33)'
+                'rgb(255, 93, 138)',
+                'rgb(147, 121, 218)',
+                'rgb(45, 163, 251)',
+                'rgba(47, 228, 167)'
                
             ],
     borderColor: [
-                'rgb(223, 82, 104)',
-                'rgb(9, 195, 182)',
-                'rgb(40, 137, 232)',
-                'rgba(254, 187, 33)'
+                'rgb(255, 93, 138)',
+                'rgb(147, 121, 218)',
+                'rgb(45, 163, 251)',
+                'rgba(47, 228, 167)'
                
             ]
     }],
@@ -484,7 +1329,6 @@ var myPieChart = new Chart(ctxx, {
 });        
 
 });
-
 </script>
         <!--scripts-->
     </body>

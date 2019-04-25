@@ -1,5 +1,5 @@
  #mainheader{
-    background:#6b385f !important;
+    background:white !important;
     position: fixed;
     z-index: 1;
 } 
@@ -7,13 +7,46 @@
     /* background:#414560 !important; */
 }
 form{
-    margin-top:100px !important;
-    padding-top: 66px !important;
+    /* margin-top:100px !important;
+    padding-top: 66px !important; */
 }
 #formdiv{
     background: white !important;
 }
-
+#shipadresdiv{
+    margin-bottom: 4px;
+}
+#form2,#form4{
+margin-left: 30px;
+}
+.container-fluid{
+    margin-left:58px;
+    margin-right: 58px;
+}
+.waves-effect{
+    width:13%;
+    margin-bottom: 20px;
+    left:87%;
+}
+#form1,#form3{
+    margin-left:20px;
+}
+.prefix{
+    font-size:26px !important;
+    margin-top:3px;
+}
+.btn .btn-warning{
+    margin-top: 43px;
+    height: 48px;
+}
+.rowadj{
+    margin-bottom: 0px !important;
+}
+.input-field{
+    margin-top:2px;
+    margin-bottom: 2px;
+    float: right;
+}
 #donughnutdiv{
     /* width:381px !important; */
     height:193px !important;
@@ -64,26 +97,37 @@ color:blue !important;
      background:white !important;
      margin-left:22px;
      box-shadow:3px 3px 3px -3px;
-
-}
+    }
+    textarea{
+        height: 7rem !important;
+    }
 @media only screen and (min-width: 601px){
 .row .col.m8 {
 width:56.666667% !important;
 }
+}
+
+li.tab.col.s2 {
+    width: 225px;
+}
+#feediv{
+    margin-left:30px;
 }
 #myPieChart{
      width: 476px !important; 
      height: 239px !important; 
     background: white;
     box-shadow:3px 3px 3px -3px;
-
 }
 #linechart{
 
     margin-left: 30px !important;
 
 }
-
+/* #tabsdiv{
+    position: absolute;
+    top: 30%;
+} */
 #scndbarchart{
    background: white;
    box-shadow:3px 3px 3px -3px;
@@ -99,7 +143,7 @@ width:56.666667% !important;
 
 }
 #myBarChart{
-    width:735px !important;
+    width:866px !important;
     height:285px !important;
 }
 #dotasks{
@@ -124,18 +168,26 @@ width:56.666667% !important;
 #helpicn,#bellicn{
     margin-right: 20px;
     margin-left:5px;
+    color:yellowgreen;
+}
+#bellicn{
+    font-size: 21px;
+    color: yellowgreen;
 }
 #exiticn{
     margin-right: 100px !important;
     margin-left:5px;
+    color:yellowgreen;
 
 }
 .card .card-content{
 padding-bottom: 11px !important;
 }
-
+#addicn{
+    float: right;
+}
 #tododiv{
-    color: black;
+    color: white;
 }
 #breadcrumbnav{
     background: white;
@@ -159,7 +211,9 @@ padding-bottom: 11px !important;
     font-size:20px; 
     /* float: right; */
 } 
-
+#tblcontact{
+border:1 !important;
+}
 .sidenav{
     width:260px;
 }
@@ -175,10 +229,12 @@ p{
     height:35px;
 }
 .cardinvoice{
-    background: #61AF3C;
+    background: linear-gradient(50deg,#8ef9fe,#263238)!important;
+    border-radius:9px;
 }
 .cardrevenue{
-    background: #4997C8;
+    background:linear-gradient(50deg,#f59e99,#e91e63)!important;
+    border-radius: 9px;
 }
 body{
     /* background:#272937; */
@@ -211,16 +267,48 @@ i.fa.fa-chevron-left.rotate{
      /* position: absolute;
     top:2%; 
     right:79%; */
-    color:white !important;
+    color:#606060 !important;
     font-size: 30px !important;
     z-index:1 !important;
 } 
-.tabs .tab a:hover, .tabs .tab a.active {
+ /* .tabs .tab a:hover, .tabs .tab a.active {
     background-color: lightblue !important;
     color: blue !important;
+} */
+.card .card-content .card-title { 
+    font-weight: 440;
 }
+.th{
+    background: navy;
+color: white;
+}
+#invcform{
+    padding-left: 43px;
+}
+#test4,#test5,#test1,#test2,#cnttbl,#test3{
+    background: white;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
 .tabs .tab a{
-color:navy !important;
+color:#fff;
+font-size:18px;
+font-style: italic;
+text-transform:capitalize;
+font-weight: bold;
+padding-left:30px;
+border:2px solid lightblue;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #272424;
+}
+.tabs{
+    background-color:#38A1CA;
+}
+.input-field{
+    width: 300px;
 }
 .subitem{
     margin-left: 50px;
@@ -234,13 +322,25 @@ nav a.sidenav-trigger {
     display: block;
 }
 }
+.unit,#ttl,#avr,#ldc{
+    text-align:right;
+}
 .cardleads{
-    background:#FDAE21;
+    background:linear-gradient(50deg,#ffd86f,#ff7043)!important;
+    border-radius:9px;
 }
 .card{
     height:118px !important;
-    width: 252px !important;
-    box-shadow: 6px 3px;
+    width: 266px !important;
+    /* box-shadow: 6px 3px; */
+}
+.firsticon{
+    display: inline-block; 
+    position:absolute;
+    color: #fff3f754;
+    top:12%;
+    left:-3%;
+    font-size:81px !important;    
 }
 li.active{
     background: white;
@@ -252,7 +352,7 @@ li.active{
 }
 
 .sidenav{
-    background-color: #222222!important;
+    background-color: white!important;
 }
 a.collapsible-header{
 padding-left: 30px !important;

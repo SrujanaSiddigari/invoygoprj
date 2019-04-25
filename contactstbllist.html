@@ -27,10 +27,7 @@
               <ul id="nav-mobile" class="right hide-on-med-and-down">
 
 
-                  <li><a href="#" class="tooltipped" id="helpicn" data-position="bottom" data-tooltip="Help">
-                    <i class="material-icons">help</i></a>
-                  </li>
-                  <!-- <li><a href="#" class="tooltipped" id="bellicn" data-position="bottom" data-tooltip="Notifications"><i class="material-icons">notifications_none</i></a></li> -->
+                  <li><a href="#" class="tooltipped" id="helpicn" data-position="bottom" data-tooltip="Help"><i class="material-icons">help</i></a></li>
                   <li><a href="#" class="tooltipped" id="bellicn" data-position="bottom" data-tooltip="Notifications"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
 
                   <li><a href="#" class="tooltipped" id="exiticn" data-position="bottom" data-tooltip="Logout"><i class="material-icons">exit_to_app</i></a></li>
@@ -39,6 +36,8 @@
                 </ul>
             </div>
           </nav>
+          <br>
+          <br>
           <!-- <nav>
               <div class="nav-wrapper">
                 <div class="col s12" id="breadcrumbnav">
@@ -63,7 +62,7 @@
           <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div></li>
         <li><a href="dashboardpg.html"><i class="material-icons" id="icn">dashboard</i>Dashboard</a></li>
-       <li><a href="contactstbllist.html"><i class="material-icons" id="icn">contacts</i>Contacts</a></li>
+       <li><a href="contactstab.html"><i class="material-icons" id="icn">contacts</i>Contacts</a></li>
        <li><a href="#!"><i class="material-icons" id="icn">description</i>Invoices</a></li>
        <li><a href="#!"><i class="material-icons" id="icn">business_center</i>Payments</a></li>
 
@@ -139,145 +138,48 @@
       <!--side nav-->
      
       <!--middle content starts here-->
-        <br>
-        <br>
-        <div class="container">
-           <br>
-           <br>
-           <div class="row" id="row1">
-
-           <!--start of invoices and Revenues-->
-           <div class="col m4">
-                 
-       <div class="card cardinvoice">
-         <div class="card-content white-text">
-            <span>  <i class="material-icons firsticon">description</i></span>
-
-           <span class="card-title" id="ttl">Total-Invoices</span>
-           <p class="unit">398 +</p>
-         </div>
+      <br>
+      <br>
+        <div class="container-fluid">
+            <a href="contactstab.html">
+                    <button  class="btn btn-success">+ New Contact</button>
+            </a>
+            <button class="btn btn-success">+ Import Contact</button> 
        
-       </div>
-     </div>
-     <div class="col m4">
-   
-       <div class="card cardrevenue">
-         <div class="card-content white-text">
-          <span>  <i class="material-icons firsticon">attach_money</i></span>
-
-           <span class="card-title" id="avr">Average-Revenue</span>
-           <p class="unit">$1,427</p>
-         </div>
+            <div id="cnttbl">            
+                <table id="tblcontact" cellspacing="0" cellpadding="10">
+                        <tr>
+                          <th class="th">Name</th>
+                          <th class="th">Company</th>
+                          <th class="th">Phone</th>
+                          <th class="th">Email</th>
+                          <th class="th">$Balance</th>
+                          <th class="th">$Total Paid</th>
+                          <th class="th">$Past Due</th>
+                          <th class="th">Date Entered</th>
+                          <th class="th">Status</th>
+                          <th class="th">Stage</th>
+                          <th class="th">Priority</th>
+                        </tr>
+                      <td>
+                            <div class="chip">
+                                    <img src="images/sidenavprofimg.jpg" alt="Contact Person">
+                                    Jane Doe
+                                  </div>
+                      </td>
+                      <td>Kair</td>
+                      <td>888-999-0000</td>
+                     <td>Jane@gmail.com</td>
+                     <td style="color:green">$400</td>
+                     <td style="color:red">$800</td>
+                     <td>$20</td>
+                     <td>3/1/19</td>
+                     <td>--</td>
+                     <td>--</td>
+                     <td style="color:red">High</td>
+                      </table>
+                </div>
         
-       </div>
-     </div>
-     <div class="col m4">
-      
-         <div class="card cardleads">
-           <div class="card-content white-text">
-              <span>  <i class="material-icons firsticon">call</i></span>
-
-             <span class="card-title" id="ldc">Leads-Contacted</span>
-             <p class="unit">2000+</p>
-           </div>
-          
-         </div>
-       </div>
-      
- <!--end of first row-->    
- </div>
-<!--end of invoices and Revenues-->
-
-                    <div class="row">
-                        <div id="firstbachart" class="col m8 card-content">
-                            <canvas id="myChart"></canvas>
-                          </div>
-                            <div  id="donughnutdiv" class="col m4 card-content">
-                                    <canvas id="myDoughnutChart"></canvas>
-                                </div>
-                    <!--end of second row-->
-                    </div>  
-
-                    <div class="row">
-                            <div class="col m5">
-                                <div class="card white darken-1 cards">
-                                  <div class="card-content amber darken-1 white-text">
-                                    <span class="card-title" id="tododiv">Tasks<i class="material-icons" id="addicn">add</i>
-                                    </span>
-                                  </div>
-                                   
-                                  <div class="card-content" id="dotasks">
-                                    
-                                   <p>
-                                      <label>
-                                        <input type="checkbox" />
-                                        <span>Alice to be contancted</span>
-                                      </label>
-                                    </p>
-                                    <p>
-                                        <label>
-                                          <input type="checkbox" />
-                                          <span>Usha snapshot to be reviewed</span>
-                                        </label>
-                                      </p>
-                                      <span class="card-title">Finished Tasks</span>
-                                    
-                                      <p>
-                                          <label>
-                                            <input type="checkbox" class="filled-in" checked="checked"/>
-                                            <span style="text-decoration:line-through">josh has been Contacted for Lead</span>
-                                          </label>
-                                        </p>
-                                        <p>
-                                            <label>
-                                              <input type="checkbox" class="filled-in" checked="checked"/>
-                                              <span style="text-decoration:line-through">Uman document reviewed</span>
-                                            </label>
-                                          </p>
-                                      
-                                  </div>
-                                
-                                </div>
-                              </div>  
-                           
-                  
-                        <div class="m7" id="linechart">
-                          <canvas id="myLineChart"></canvas> 
-                      </div> 
-                            
-                       <!--end of third row-->
-                          </div>
-      
-                         <div class="row">
-                          <div class="col m5 card-content">
-                            <div class="card white darken-1 cards">
-                                <div class="card-content white-text">
-                                  <span class="card-title" id="tododiv" style="color: black">PaymentMethods</span>
-                                </div>
-                                   <div class="paydiv1" style="background: #4D91C6;color: white">
-                                     <span>Credit</span>
-                                     <span style="float:right">$2,435.56</span>
-                                   </div>
-                                   <div class="paydiv2" style="background: #4A5657;color: white">
-                                    <span>Cash</span>
-                                    <span style="float:right">$876.96</span>
-                                  </div>
-                                  <div class="paydiv3" style="background: #787B80;color: white">
-                                    <span>Other</span>
-                                    <span style="float:right">$231.43</span>
-                                  </div>
-                                </div>
-                          </div>
-                          <div class="m7" id="piechart">
-                            <canvas id="myPieChart"></canvas> 
-                        </div> 
-                        </div>
-      
-                        <div class="m5" id="scndbarchart">
-                            <canvas id="myBarChart"></canvas> 
-                        </div> 
-      
-                
              </div>                            
              <!--end of container-->    
                     
@@ -430,8 +332,9 @@ var dataFirst = {
     lineTension: 0.3,
     fill: true,
    
-    borderColor: 'rgb(101, 148, 255)',
-    backgroundColor:'rgb(101, 148, 255)',
+    borderColor: 'rgba(146, 228, 165, 1)' ,
+    
+    backgroundColor: 'rgba(146, 228, 165, 1)' ,
     // pointBorderColor: 'rgba(255, 99, 132, 1)',
     // pointBackgroundColor: 'lightgreen',
     pointRadius: 5,
@@ -446,8 +349,8 @@ var dataSecond = {
     data: [65, 59, 80, 81, 56, 55, 40],
     lineTension: 0.3,
     fill: true,
-    borderColor: 'rgb(178, 202, 255)',
-    backgroundColor: 'rgb(178, 202, 255)',
+    borderColor: 'rgb(110, 74, 255)',
+    backgroundColor: 'rgb(110, 74, 255)',
     
     // pointBorderColor:  'rgba(54, 162, 235, 1)',
     // pointBackgroundColor: 'lightgreen',
